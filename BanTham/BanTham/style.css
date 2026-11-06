@@ -1112,6 +1112,22 @@ html {
   }
 }
 
+.sort-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.sort-btn {
+  padding: 8px 16px;
+  border: 1px solid (--line);
+  border-radius: 20px;
+  background: var(--white);
+  color: var(--ink);
+  text-decoration: none;
+}
+.sort-btn.active {           
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+
 /* ----- Icon người dùng + thông báo ----- */
 .guest{display:inline-flex;gap:18px; align-items: center;}
 .usermenu{position:relative}
