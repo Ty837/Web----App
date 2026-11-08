@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kết quả tìm kiếm</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="logo" href="index.html">Thảm Nhà Xinh</a><form class="hsearch" action="ket-qua.html" method="get" role="search"><input type="text" name="ten" placeholder="Tìm kiếm thảm..." aria-label="Tìm thảm"><button type="submit" aria-label="Tìm"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button></form><nav><a href="tim-kiem.html">Tìm nâng cao</a><a href="index.html">Trang chủ</a><a href="danh-sach.html">Sản phẩm</a><a href="gio-hang.html">Giỏ hàng</a><a href="lich-su.html">Lịch sử</a><a class="usermenu user-btn" href="tai-khoan.html" aria-label="Tài khoản"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></a></nav></header>
+<main>
+<h1>Kết quả tìm kiếm</h1><p>Hiện có 12 sản phẩm thảm trong cửa hàng.</p>
+<form class="filter" action="ket-qua.html" method="get">
+<h2>Chọn theo tiêu chí</h2>
+<div class="chips">
+<button class="chip outline" type="submit"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></svg>Bộ lọc</button>
+<input class="chip chip-input" type="text" name="ten" placeholder="Tên thảm" aria-label="Tên thảm">
+<label class="chip toggle"><input type="checkbox" name="sanhang"><span>Sẵn hàng</span></label>
+<label class="chip toggle"><input type="checkbox" name="moi"><span>Hàng mới về</span></label>
+<details class="chip"><summary>Phân loại</summary><div class="menu"><label><input type="checkbox" name="loai" value="Phòng khách"> Thảm phòng khách</label><label><input type="checkbox" name="loai" value="Văn phòng"> Thảm văn phòng</label></div></details>
+<details class="chip"><summary>Khoảng giá</summary><div class="menu"><label><input type="radio" name="gia" value="0-500000"> Dưới 500.000 ₫</label><label><input type="radio" name="gia" value="500000-1000000"> 500.000 – 1.000.000 ₫</label><label><input type="radio" name="gia" value="1000000-2000000"> 1.000.000 – 2.000.000 ₫</label><label><input type="radio" name="gia" value="2000000-999999999"> Trên 2.000.000 ₫</label></div></details>
+<details class="chip"><summary>Kích thước</summary><div class="menu"><label><input type="checkbox" name="kt"> 60 × 120 cm</label><label><input type="checkbox" name="kt"> 120 × 170 cm</label><label><input type="checkbox" name="kt"> 160 × 230 cm</label><label><input type="checkbox" name="kt"> 200 × 300 cm</label></div></details>
+<details class="chip"><summary>Chất liệu</summary><div class="menu"><label><input type="checkbox" name="cl"> Len</label><label><input type="checkbox" name="cl"> Sợi tổng hợp</label><label><input type="checkbox" name="cl"> Polyester</label><label><input type="checkbox" name="cl"> Cao su</label></div></details>
+<details class="chip"><summary>Màu sắc</summary><div class="menu"><label><input type="checkbox" name="mau"> Xanh</label><label><input type="checkbox" name="mau"> Đỏ</label><label><input type="checkbox" name="mau"> Xám</label><label><input type="checkbox" name="mau"> Vàng</label><label><input type="checkbox" name="mau"> Nâu</label></div></details>
+<details class="chip"><summary>Hoa văn</summary><div class="menu"><label><input type="checkbox" name="hv"> Ba Tư</label><label><input type="checkbox" name="hv"> Hình học</label><label><input type="checkbox" name="hv"> Maroc</label><label><input type="checkbox" name="hv"> Trơn</label></div></details>
+<details class="chip"><summary>Phong cách</summary><div class="menu right"><label><input type="checkbox" name="pc"> Cổ điển</label><label><input type="checkbox" name="pc"> Hiện đại</label><label><input type="checkbox" name="pc"> Tối giản</label></div></details>
+<button class="btn" type="submit">Áp dụng</button>
+</div>
+<div class="sortbar"><h2>Sắp xếp theo</h2><div class="sort">
+<label><input type="radio" name="sapxep" value="pho-bien" checked><span>Phổ biến</span></label>
+<label><input type="radio" name="sapxep" value="hot"><span>Khuyến mãi HOT</span></label>
+<label><input type="radio" name="sapxep" value="gia-tang"><span>Giá Thấp - Cao</span></label>
+<label><input type="radio" name="sapxep" value="gia-giam"><span>Giá Cao - Thấp</span></label>
+</div></div>
+</form>
+<div class="grid page" data-page="1">
+<a class="card" href="san-pham.html" data-ten="Thảm Ba Tư họa tiết xanh" data-loai="Phòng khách" data-gia="2450000"><div class="img"><img src="assets/images/thảm ba tư màu xanh 1.webp" alt="Thảm Ba Tư họa tiết xanh" loading="lazy" decoding="async"></div><div class="info"><h2>Thảm Ba Tư họa tiết xanh</h2><span class="tag">Phòng khách</span><p class="price">2.450.000 ₫</p></div></a>
+<a class="card" href="san-pham.html" data-ten="Thảm lau chân chống trượt" data-loai="Văn phòng" data-gia="150000"><div class="img"><img src="assets/images/thảm lau chân chống trượt.jfif" alt="Thảm lau ch&#226;n chống trượt" loading="lazy" decoding="async"></div><div class="info"><h2>Thảm lau chân chống trượt</h2><span class="tag">Văn phòng</span><p class="price">150.000 ₫</p></div></a>
+<a class="card" href="san-pham.html" data-ten="Thảm lông xù xám" data-loai="Phòng khách" data-gia="1250000"><div class="img"><img src="assets/images/thảm lông xù xám.jfif" alt="Thảm l&#244;ng x&#249; x&#225;m" loading="lazy" decoding="async"></div><div class="info"><h2>Thảm lông xù xám</h2><span class="tag">Phòng khách</span><p class="price">1.250.000 ₫</p></div></a>
+<a class="card" href="san-pham.html" data-ten="Thảm ô vuông ghép" data-loai="Văn phòng" data-gia="1100000"><div class="img"><img src="assets/images/thảm ô vuông ghép.jfif" alt="Thảm &#244; vu&#244;ng gh&#233;p" loading="lazy" decoding="async"></div><div class="info"><h2>Thảm ô vuông ghép</h2><span class="tag">Văn phòng</span><p class="price">1.100.000 ₫</p></div></a>
+</div>
+<nav class="paging" aria-label="Phân trang sản phẩm">
+  <a class="btn page-btn active" href="ket-qua.html" aria-current="page">1</a>
+  <a class="btn page-btn" href="ket-qua.html" aria-label="Trang 2">2</a>
+  <a class="btn page-btn" href="ket-qua.html" aria-label="Trang 3">3</a>
+</nav>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <section><h2 class="footer-brand">Thảm Nhà Xinh</h2><p>Chọn thảm đẹp, bền và phù hợp cho mọi không gian sống.</p></section>
+    <section><h3>Liên hệ</h3><div class="footer-links"><a href="tel:0900000000">Hotline: 0900 000 000</a><a href="mailto:hello@thamnhaxinh.vn">hello@thamnhaxinh.vn</a><span>12 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</span></div></section>
+    <section><h3>Hỗ trợ</h3><div class="footer-links"><a href="tim-kiem.html">Tìm kiếm thảm</a><a href="lich-su.html">Theo dõi đơn hàng</a><a href="tai-khoan.html">Tài khoản của tôi</a></div></section>
+    <section><h3>Chính sách</h3><div class="footer-links"><span>Đổi trả trong 7 ngày</span><span>Giao hàng toàn quốc</span><span>Thanh toán an toàn</span></div></section>
+  </div>
+  <div class="footer-bottom">© 2026 Thảm Nhà Xinh. All rights reserved.</div>
+</footer>
+<button type="button" class="to-top" aria-label="Mũi tên">↑</button><script src="script.js"></script></body></html>
+
+
