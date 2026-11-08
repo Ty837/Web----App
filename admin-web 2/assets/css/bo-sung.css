@@ -1,0 +1,21 @@
+/* Bổ sung: Danh mục nổi bật, thẻ Ưu đãi tháng này, ô ảnh danh mục */
+
+/* Khối danh mục nổi bật: giống phần "Danh mục nổi bật" ở trang bán hàng */
+.khoi-noi-bat { margin-bottom: 18px; }
+.khoi-noi-bat .tieu-de small { font-weight: 400; font-size: 13px; color: var(--muted); margin-left: 6px; }
+.dm-noi-bat { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 14px; }
+.the-dm { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 150px; padding: 20px 22px; border-radius: 14px; overflow: hidden; color: #fff; text-decoration: none; isolation: isolate; transition: transform .15s, box-shadow .15s; }
+.the-dm:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(27, 34, 51, .22); }
+.the-dm img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.the-dm::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(20, 18, 16, .10) 0%, rgba(20, 18, 16, .72) 100%); }
+.the-dm strong { font-size: 18px; line-height: 1.3; }
+.the-dm .mo-ta { font-size: 14px; margin-top: 4px; opacity: .95; }
+.the-dm .sua { position: absolute; top: 12px; right: 12px; padding: 3px 11px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: var(--ink); font-size: 12.5px; font-weight: 600; }
+.the-uu-dai::before { background: linear-gradient(180deg, rgba(60, 30, 10, .15) 0%, rgba(60, 30, 10, .78) 100%); }
+
+/* Ô ảnh danh mục / ưu đãi: khung ngang */
+.o-anh-rong .xem-truoc { width: 320px; height: 160px; }
+.o-anh-rong .tai-anh { flex-direction: row; }
+
+@media (max-width: 900px) { .dm-noi-bat { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .o-anh-rong .xem-truoc { width: 100%; } }
