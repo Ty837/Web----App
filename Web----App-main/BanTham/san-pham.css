@@ -1,0 +1,309 @@
+/* Thêm vào sau style.css, chỉ dùng cho trang san-pham.html */
+
+.crumb {
+  margin:0 0 16px;
+  color:var(--muted);
+  font-size:14px
+}
+
+.muted {
+  color:var(--muted);
+  font-size:14px
+}
+
+.pd {
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  gap:36px;
+  align-items:start
+}
+
+.gallery .main {
+  height:420px;
+  border-radius:12px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:600;
+  font-size:18px;
+  background:#2B3A67
+}
+
+.gallery .main img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+
+.thumbs {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:12px
+}
+
+.thumbs .gallery-thumb {
+  width:100%;
+  height:76px;
+  border-radius:8px;
+  overflow:hidden;
+  padding:0;
+  border:2px solid transparent;
+  background:transparent;
+  display:block;
+  cursor:pointer
+}
+
+.thumbs .gallery-thumb:hover {
+  border-color:var(--primary)
+}
+
+.thumbs .gallery-thumb:focus-visible {
+  outline:2px solid var(--dark);
+  outline-offset:2px
+}
+
+.thumbs .gallery-thumb img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+
+.thumbs .gallery-thumb.active {
+  border-color:var(--primary)
+}
+
+.pd-info h1 {
+  font-size:30px;
+  line-height:1.25;
+  margin:0 0 10px
+}
+
+.pd-meta {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+  color:var(--muted);
+  font-size:14px
+}
+
+.stars {
+  color:var(--gold);
+  letter-spacing:2px;
+  font-size:17px
+}
+
+.pd-price {
+  display:flex;
+  align-items:baseline;
+  gap:12px;
+  flex-wrap:wrap;
+  padding:14px 18px;
+  background:var(--chip);
+  border-radius:10px;
+  margin-bottom:18px
+}
+
+.pd-price .now {
+  font-size:30px;
+  font-weight:700;
+  color:var(--primary)
+}
+
+.pd-price .old {
+  color:var(--muted);
+  text-decoration:line-through
+}
+
+.pd-price .off {
+  background:var(--primary);
+  color:#fff;
+  border-radius:6px;
+  padding:2px 8px;
+  font-size:13px;
+  font-weight:600
+}
+
+.pd-short {
+  margin:0 0 18px
+}
+
+.specs {
+  display:grid;
+  grid-template-columns:130px 1fr;
+  gap:10px 16px;
+  margin:0 0 22px;
+  padding:16px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line)
+}
+
+.specs dt {
+  color:var(--muted)
+}
+
+.specs dd {
+  margin:0;
+  font-weight:500
+}
+
+.pd-actions {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:20px
+}
+
+.pd-actions .btn {
+  padding:14px 28px
+}
+
+.perks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.perk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.perk svg {
+  width: 44px;
+  height: 44px;
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.perk p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.subnav {
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin:36px 0 20px;
+  padding:6px;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:999px
+}
+
+.subnav a {
+  padding:8px 18px;
+  border-radius:999px;
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px
+}
+
+.subnav a:hover {
+  background:var(--chip);
+  color:var(--primary)
+}
+
+.pd-sec {
+  scroll-margin-top:90px;
+  margin-bottom:24px
+}
+
+.pd-sec h2 {
+  font-size:22px;
+  margin-bottom:14px
+}
+
+.pd-sec ul {
+  padding-left:20px;
+  margin:0
+}
+
+.pd-sec li {
+  margin-bottom:6px
+}
+
+.spec-table th {
+  width:32%;
+  background:var(--chip)
+}
+
+.review {
+  border-bottom:1px solid var(--line);
+  padding:14px 0
+}
+
+.review:last-child {
+  border-bottom:0
+}
+
+.review p {
+  margin:6px 0 0
+}
+
+.review .who {
+  font-weight:700
+}
+
+.rating-sum {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:10px
+}
+
+.score {
+  font-size:44px;
+  font-weight:700;
+  color:var(--primary);
+  line-height:1
+}
+
+@media(max-width:800px) {
+  .pd {
+    grid-template-columns:1fr
+  }
+  .gallery .main {
+    height:280px
+  }
+  .perks {
+    grid-template-columns:1fr
+  }
+  .specs {
+    grid-template-columns:110px 1fr
+  }
+}
+.gallery .perks {
+  margin-top: 16px;
+}
+
+.pd-actions {
+  margin-bottom: 0;
+}
+.pd-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.pd-actions .btn {
+  text-align: center;
+  padding: 14px 0;
+}
